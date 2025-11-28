@@ -14,8 +14,7 @@
 ---
 
 ## train
-기본 가중치([XMem.pth](https://github.com/hkchengrex/XMem))를 다운
-extractor.py 실행
-
+기본 가중치([XMem.pth](https://github.com/hkchengrex/XMem))를 다운 후 saves/에 저장 \\
+어뎁터 가중치 생성
 ```bash
-pip install torch torchvision numpy opencv-python matplotlib scikit-image tqdm
+python extractor.py
