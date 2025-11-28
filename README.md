@@ -8,7 +8,7 @@
 - **Python:** 3.10.18  
 - **PyTorch:** 2.0.1  
 - **CUDA:** 11.7  
-- **GPU:** Required for training/inference  
+- **GPU:** RTX 3090 24GB
 
 ---
 ## training
