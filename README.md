@@ -4,7 +4,7 @@
 해양 탐사를 위한 수중 이미지 객체 분할 모델입니다.
 ## Model_Overview
 ![그림1](https://github.com/user-attachments/assets/3235923a-7f5c-4196-bb42-ea9be1a191b2)
-## module_detail
+## Adapter_detail
 ![그림3](https://github.com/user-attachments/assets/bf54e236-bee0-4ed2-9b56-c81015378fe5)
 
 ## Environment
