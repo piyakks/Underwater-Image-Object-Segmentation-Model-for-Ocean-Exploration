@@ -105,7 +105,7 @@ for si, stage in enumerate(stages_to_perform):
         print('I am loading network from a disk, as listed in configuration')
         model.load_network(raw_config['load_network'])
         raw_config['load_network'] = None
-    elif raw_config['load_network_control'] is not None:
+    elif raw_config['load_network_control'] is not None: #논문 구현 추가 코드
         model.load_network_control(raw_config['load_network_control'])
         
         raw_config['load_network'] = None
