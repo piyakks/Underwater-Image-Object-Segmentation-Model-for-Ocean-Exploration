@@ -4,7 +4,7 @@ import torch.nn as nn
 from model.aggregate import aggregate
 from model.modules import *
 from model.memory_util import *
-
+#제로컨볼루션#
 def zero_module(module):
     """
     Zero out the parameters of a module and return it. #ControlNet에서 가져옴 https://github.com/lllyasviel/ControlNet/tree/main
@@ -12,7 +12,7 @@ def zero_module(module):
     for p in module.parameters():
         p.detach().zero_()
     return module
-
+###특징맵 전처리 모듈###
 class RedEnhancerLog(nn.Module):
     def __init__(self, c=1.0, mean=0.485, std=0.229):
         super().__init__()
@@ -26,23 +26,22 @@ class RedEnhancerLog(nn.Module):
     def forward(self, frame):
         
         red = frame[:, 0:1] * self.std + self.mean   # [0~1]
-        red=red*255.0
-        enhanced = self.c * torch.log1p(red)
-        red_new = red + self.zero_red(enhanced)
+        red=red*255.0 #원본 복원
+        enhanced = self.c * torch.log1p(red) #log 함수 증강
+        red_new = red + self.zero_red(enhanced) #증강
         red_new=red_new/255.0    
-        red_new_norm = (red_new - self.mean) / self.std
+        red_new_norm = (red_new - self.mean) / self.std #다시 정규화
         
         return red_new_norm  
         
-
+#controlnet형식 adapter#
 class adapter(nn.Module):
     def __init__(self,dim):
         super().__init__()
         
-        
-        self.enhancer=RedEnhancerLog(c=1.0)
-        self.zero_conv_f4=zero_module(nn.Conv2d(dim,dim,1,1))
-        self.zero_conv_f8=zero_module(nn.Conv2d(dim*2,dim*2,1,1))
+        self.enhancer=RedEnhancerLog(c=1.0) #증강강
+        self.zero_conv_f4=zero_module(nn.Conv2d(dim,dim,1,1))  #f4 제로 컨볼루션
+        self.zero_conv_f8=zero_module(nn.Conv2d(dim*2,dim*2,1,1)) # f8 제로 컨볼루션
         # filtering=None
         
         network = resnet.resnet50(pretrained=False)
@@ -83,8 +82,8 @@ class XMem(nn.Module):
         print(f'Single object mode: {self.single_object}')
 
         self.key_encoder = KeyEncoder()
-        self.adapter=adapter(256)
-        self.adapter.load_state_dict(torch.load('saves/key_encoder_weights.pth'),strict=False)
+        self.adapter=adapter(256) #어뎁터터
+        self.adapter.load_state_dict(torch.load('saves/key_encoder_weights.pth'),strict=False) #사전에 가중치 생성 필요 make_encoder_copy 실행
         
         self.value_encoder = ValueEncoder(self.value_dim, self.hidden_dim, self.single_object)
 
@@ -110,10 +109,10 @@ class XMem(nn.Module):
             raise NotImplementedError
 
         f16, f8, f4 = self.key_encoder(frame)
-        f_8,f_4=self.adapter(frame)
+        f_8,f_4=self.adapter(frame) #어뎁터 실행 
         
-        f8=f8+f_8
-        f4=f4+f_4
+        f8=f8+f_8 #증강
+        f4=f4+f_4 #증강
                  
         key, shrinkage, selection = self.key_proj(f16, need_sk, need_ek)
 
