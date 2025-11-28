@@ -1,11 +1,3 @@
-"""
-This file defines XMem, the highest level nn.Module interface
-During training, it is used by trainer.py
-During evaluation, it is used by inference_core.py
-
-It further depends on modules.py which gives more detailed implementations of sub-modules
-"""
-
 import torch
 import torch.nn as nn
 
