@@ -29,3 +29,5 @@ saves/
 ```bash
 torchrun --nproc_per_node=[gpu] --master_port=25763 train.py  --exp_id retrain_stage3_only  --stage 3  --load_network_control saves/XMem.pth 
 ```   
+## inference
+python eval.py --model [path to model file] --output [where to save the output] --dataset [which dataset to evaluate on] --split [val for validation or test for test-dev]
