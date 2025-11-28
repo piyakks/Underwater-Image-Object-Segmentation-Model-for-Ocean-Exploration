@@ -34,12 +34,5 @@ torchrun --nproc_per_node=[gpu] --master_port=25763 train.py  --exp_id retrain_s
 python eval.py --model [path to model file] --output [where to save the output] --dataset [which dataset to evaluate on] --split [val for validation or test for test-dev]
 ```
 ## Result
-<p float="left">
-  <a href="https://youtu.be/R3AijHJ3E64" target="_blank">
-    <img src="https://github.com/user-attachments/assets/b7c5d414-70bb-4e19-b3aa-b1574b344cd9" width="450" height="500" />
-  </a>
-  <a href="https://youtu.be/다른영상ID" target="_blank">
-    <img src="https://github.com/user-attachments/assets/0f306cfd-798e-4974-bb41-9f46ae9b6bfa" width="500" height="500" />
-  </a>
-</p>
-
+![xmem_whale-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/b3e987e1-72d9-4572-8a33-ff2401b28b3e)
+![xmem_ugly_fish-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/6c4534f4-d812-49c6-8ef7-5cc3c1a88d00)
