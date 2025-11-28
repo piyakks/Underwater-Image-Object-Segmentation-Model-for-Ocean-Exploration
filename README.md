@@ -34,9 +34,4 @@ torchrun --nproc_per_node=[gpu] --master_port=25763 train.py  --exp_id retrain_s
 python eval.py --model [path to model file] --output [where to save the output] --dataset [which dataset to evaluate on] --split [val for validation or test for test-dev]
 ```
 ## Result
-[![Watch the video](https://img.youtube.com/vi/R3AijHJ3E64/0.jpg)](https://youtu.be/R3AijHJ3E64)
-
-
-
-
-
+![xmem_whale-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/b7c5d414-70bb-4e19-b3aa-b1574b344cd9)
