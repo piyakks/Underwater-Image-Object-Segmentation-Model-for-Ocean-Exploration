@@ -13,9 +13,9 @@
 
 ---
 
-## Requirements
-
-Install the required Python packages:
+## train
+기본 가중치([XMem.pth](https://github.com/hkchengrex/XMem))를 다운
+extractor.py 실행
 
 ```bash
 pip install torch torchvision numpy opencv-python matplotlib scikit-image tqdm
