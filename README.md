@@ -36,5 +36,5 @@ python eval.py --model [path to model file] --output [where to save the output] 
 ## Result
 <p float="left">
   <img src="https://github.com/user-attachments/assets/b7c5d414-70bb-4e19-b3aa-b1574b344cd9" width="400" />
-  <img src="https://github.com/user-attachments/assets/0f306cfd-798e-4974-bb41-9f46ae9b6bfa" width="400" />
+  <img src="https://github.com/user-attachments/assets/0f306cfd-798e-4974-bb41-9f46ae9b6bfa" width="600" />
 </p>
