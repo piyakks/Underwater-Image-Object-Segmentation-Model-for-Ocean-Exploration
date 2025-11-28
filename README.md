@@ -35,4 +35,5 @@ python eval.py --model [path to model file] --output [where to save the output] 
 ```
 ## Result
 ![xmem_whale-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/b7c5d414-70bb-4e19-b3aa-b1574b344cd9)
-![Uploading xmem_ugly_fish-ezgif.com-video-to-gif-converter+(1).gif…]()
+
+![xmem_ugly_fish-ezgif com-video-to-gif-converter+(1)](https://github.com/user-attachments/assets/0f306cfd-798e-4974-bb41-9f46ae9b6bfa)
