@@ -11,6 +11,7 @@
 - **GPU:** Required for training/inference  
 
 ---
+## training
 1. **기본 가중치 다운로드**  
 [XMem.pth](https://github.com/hkchengrex/XMem) 를 다운로드 후 `saves/` 폴더에 저장.
 
@@ -24,3 +25,7 @@ saves/
  ├─ XMem.pth
  └─ key_encoder_weights.pth
 ```
+3. 학습
+```bash
+torchrun --nproc_per_node=[gpu] --master_port=25763 train.py  --exp_id retrain_stage3_only  --stage 3  --load_network_control saves/XMem.pth 
+```   
