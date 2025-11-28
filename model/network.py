@@ -259,7 +259,7 @@ class XMem(nn.Module):
 
         self.load_state_dict(src_dict,strict=False)
         
-    def load_weights_control(self, src_dict, init_as_zero_if_needed=False):
+    def load_weights_control(self, src_dict, init_as_zero_if_needed=False): #논문 구현 추가 학습 코드
         # Maps SO weight (without other_mask) to MO weight (with other_mask)
         for k in list(src_dict.keys()):
             if k == 'value_encoder.conv1.weight':
@@ -274,6 +274,6 @@ class XMem(nn.Module):
                     src_dict[k] = torch.cat([src_dict[k], pads], 1)
 
         self.load_state_dict(src_dict,strict=False)
-        for name, param in self.named_parameters(): #나머지는 다 freeze 추가한것만 학습 
+        for name, param in self.named_parameters(): #나머지는 다 freeze 추가한 모듈만 학습 (ex. 제로컨볼루션)
             if name in src_dict:
                 param.requires_grad = False
