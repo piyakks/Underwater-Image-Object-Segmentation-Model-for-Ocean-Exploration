@@ -1,10 +1,7 @@
 # Underwater-Image-Object-Segmentation-Model-for-Ocean-Exploration
 
 본 코드는 [XMem: Long-Term Video Object Segmentation with an Atkinson-Shiffrin Memory Model](https://github.com/hkchengrex/XMem)를 기본으로 하여 작성되었습니다.
-연구 배경: 
-
-해양 탐사를 위한 수중 영상 객체 분할 모델입니다.
-
+해양 탐사를 위한 수중 영상 객체 분할 모델.
 
 ## Model_Overview
 ![그림1](https://github.com/user-attachments/assets/3235923a-7f5c-4196-bb42-ea9be1a191b2)
