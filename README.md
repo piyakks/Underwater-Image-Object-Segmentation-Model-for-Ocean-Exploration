@@ -42,5 +42,6 @@ python eval.py --model [path to model file] --output [where to save the output] 
 ![xmem_whale-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/b3e987e1-72d9-4572-8a33-ff2401b28b3e)
 ![xmem_ugly_fish-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/6c4534f4-d812-49c6-8ef7-5cc3c1a88d00)
 ## Result_table
-<img width="556" height="566" alt="image" src="https://github.com/user-attachments/assets/790ad5b4-49d1-4b2e-b8cc-a8672ebe51e5" />
+<img width="564" height="560" alt="image" src="https://github.com/user-attachments/assets/cd11acd0-abf6-4afd-b923-3f2b8ed54b53" />
+
 
