@@ -35,7 +35,11 @@ python eval.py --model [path to model file] --output [where to save the output] 
 ```
 ## Result
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/b7c5d414-70bb-4e19-b3aa-b1574b344cd9" width="450" height="500" />
-<img src="https://github.com/user-attachments/assets/0f306cfd-798e-4974-bb41-9f46ae9b6bfa" width="500" height="500" />
-
+  <a href="https://youtu.be/R3AijHJ3E64" target="_blank">
+    <img src="https://github.com/user-attachments/assets/b7c5d414-70bb-4e19-b3aa-b1574b344cd9" width="450" height="500" />
+  </a>
+  <a href="https://youtu.be/다른영상ID" target="_blank">
+    <img src="https://github.com/user-attachments/assets/0f306cfd-798e-4974-bb41-9f46ae9b6bfa" width="500" height="500" />
+  </a>
 </p>
+
