@@ -20,6 +20,9 @@
 
 ```bash
 python extractor.py
+```bash
+```bash
 saves/
  ├─ XMem.pth
  └─ key_encoder_weights.pth
+```bash
