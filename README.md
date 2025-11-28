@@ -1,6 +1,5 @@
 # Underwater-Image-Object-Segmentation-Model-for-Ocean-Exploration
-
-This repository contains an underwater image object segmentation model designed for ocean exploration tasks. The model segments objects of interest in underwater imagery, facilitating marine research and exploration.
+본 코드는 [XMem: Long-Term Video Object Segmentation with an Atkinson-Shiffrin Memory Model](https://github.com/hkchengrex/XMem)를 기본으로 하여 작성되었습니다
 
 ---
 
