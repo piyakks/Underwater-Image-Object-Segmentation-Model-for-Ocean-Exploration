@@ -11,7 +11,6 @@
 - **GPU:** Required for training/inference  
 
 ---
-## Pretrained Weights
 1. **기본 가중치 다운로드**  
 [XMem.pth](https://github.com/hkchengrex/XMem) 를 다운로드 후 `saves/` 폴더에 저장.
 
