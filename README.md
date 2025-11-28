@@ -13,8 +13,15 @@
 
 ---
 
-## train
-기본 가중치([XMem.pth](https://github.com/hkchengrex/XMem))를 다운 후 saves/에 저장 \\
-어뎁터 가중치 생성
-```bash
-python extractor.py
+## Pretrained Weights
+1. **기본 가중치 다운로드**  
+[XMem.pth](https://github.com/hkchengrex/XMem) 를 다운로드 후 `saves/` 폴더에 저장.
+
+
+2. **어뎁터 가중치 추출**
+``` bash
+   extractor.py
+```text
+saves/
+ └─ XMem.pth
+ └─ key_encoder_weights.pth 
