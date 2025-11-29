@@ -7,7 +7,7 @@
 ## Model_Overview
 ![그림1](https://github.com/user-attachments/assets/3235923a-7f5c-4196-bb42-ea9be1a191b2)
 ## Adapter_detail
-![그림3](https://github.com/user-attachments/assets/bf54e236-bee0-4ed2-9b56-c81015378fe5)
+![xmem](https://github.com/user-attachments/assets/d26f22ed-36b0-48cb-8da1-7808ad90cb9f)
 
 ## Environment
 - **OS:** Ubuntu 20.04  
