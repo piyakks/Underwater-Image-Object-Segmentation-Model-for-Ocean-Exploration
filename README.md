@@ -33,7 +33,7 @@ saves/
 ```
 3. 학습
 ```bash
-torchrun --nproc_per_node=[gpu] --master_port=25763 train.py  --exp_id retrain_stage3_only  --stage 3  --load_network_control saves/XMem.pth 
+torchrun --nproc_per_node=[num_gpu] --master_port=25763 train.py  --exp_id retrain_stage3_only  --stage 3  --load_network_control saves/XMem.pth 
 ```   
 ## inference
 ```bash
